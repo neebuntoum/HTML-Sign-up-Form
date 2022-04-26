@@ -31,7 +31,7 @@
             <input type="text" id="address" name="address">
             <!-- Todo: City, State, and Zip Inputs -->
             <label for="city">Your City</label>
-            <input type="text" id="citys" name="city">
+            <input type="text" id="city" name="city">
 
             <label for="state">Your State</label>
             <select name="state" id="state">
@@ -85,16 +85,49 @@
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
+                </select>
+                <label for="zip">Your Zip Code</label>
+                <input type="text" id="zip" name="zip">
             </fieldset>       
             <!-- TODO: Second fieldset -->
             <fieldset>
-
-            </fieldset>
+                <legend>
+                    Your Preferences
+                </legend>
+                    <h3>Choose your location</h3>
+                    <div>
             <!-- TODO: Radio buttons for selecting preferred destination -->
+                        <input type="radio" id="aruba" name="location" value="Aruba" checked> 
+                        <label for="aruba">Aruba</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="japan" name="location" value="Japan"> 
+                        <label for="japan">Japan</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="reykjavik" name="location" value="Reykjavik"> 
+                        <label for="reykjavik">Reykjavik</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="new-zealand" name="location" value="New Zealand"> 
+                        <label for="new-zealand">New Zealand</label>
+                    </div>
+             </fieldset>
             <!-- TODO: Color input for selecting favorite color -->
+                <label for="color">Favorite Color</label>
+                <input type="color" id="color" name="color">
             <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
+                <h3>Please Select any add ons you'd like</h3>
+                <input type="checkbox" id="sauna" name="extras" value="Sauna Access">
+                <label for="sauna">Sauna Access</label>
+                <input type="checkbox" id="hottub" name="extras" value="Hot Tub">
+                <label for="sauna">Hot Tub</label>
+                <input type="checkbox" id="ocean" name="extras" value="Ocean View">
+                <label for="sauna">Ocean View</label>
+                <input type="checkbox" id="pool" name="extras" value="Pool Pass">
+                <label for="sauna">Pool Pass</label>
             <!-- TODO: Submit Button -->
+            <input type="submit" value="Enter the Contest!">
         </form>
     </main>
     <footer>
